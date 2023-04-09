@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "compile": "truffle compile",
+    "dev-deploy": "truffle migrate --network development",
+    "test": "mocha --config ./test/.mocharc.js",
+    "verify": "truffle run verify StableCoin --network goerli"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.0",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.9",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@openzeppelin/truffle-upgrades": "^1.17.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.1.3",
+    "truffle-plugin-verify": "^0.5.18"
+  }
+}
